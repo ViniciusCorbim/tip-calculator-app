@@ -47,19 +47,19 @@ main{
     border-radius: 20px;
     width: 900px;
 }
-div.inforDados p.inforDados{
+div.informData p.informData{
     color: var(--color3);
     font-weight: 700;
 }
-div.pAviso{
+div.divWarning{
     display: flex;
     justify-content: space-between;
 }
-span#aviso{
+span#spanWarning{
     color: rgba(209, 8, 8, 0.674);
     font-weight: 700;
 }
-div.escolherPorc{
+div.selectPercentage{
     display: grid;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 40px 40px;
@@ -70,7 +70,7 @@ div.escolherPorc{
     background-color: var(--color1) !important;
     color: var(--color2) !important;
 }
-div.escolherPorc button{
+div.selectPercentage button{
     background-color: var(--color2);
     border: none;
     border-radius: 3px;
@@ -80,22 +80,23 @@ div.escolherPorc button{
     font-family: var(--fontePrincipal), Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
-div.escolherPorc button:hover{
+div.selectPercentage button:hover{
     background-color: var(--color7);
     cursor: pointer;
     color: var(--color2);
 }
-#porcentagemCustom{
+#customPercentage{
     width: auto;
     font-size: 20px;
 }
-.ativada{
+.activated{
     border: 2.5px solid var(--color1);
 }
 input{
     display: flex;
     flex-wrap: wrap;
     width: 300px;
+    height: 40px;
     text-align: end;
     padding: 2px;
     font-family: var(--fontePrincipal), Arial, Helvetica, sans-serif;;
@@ -124,7 +125,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-input#porcentagemCustom{
+input#customPercentage{
     padding-left: 0px !important;
 }
 input.setZeroPeople{
@@ -133,7 +134,7 @@ input.setZeroPeople{
 div.containerDollar{
     margin-bottom: 40px;
 }
-div.inforDados p{
+div.informData p{
     margin-bottom: 7px;
 }
 div.containerIcon{
@@ -144,8 +145,9 @@ img.iconDollar, img.iconPerson{
     left: 5%;
     top: 32%;
 }
-div.resultado{
+div.result{
     display: flex;
+    width: 420px;
     gap: 50px;
     flex-direction: column;
     justify-content: space-between;
@@ -153,36 +155,37 @@ div.resultado{
     padding: 50px 30px 40px;
     border-radius: 15px;
 }
-div.dados{
+div.data{
     display: flex;
     gap: 40px;
     flex-direction: column;
     justify-content: space-between;
 }
-div.containerDados{
+div.containerData{
     display: flex;
-    gap: 80px;
+    /*gap: 60px;*/
     justify-content: space-between;
     align-items: end;
 }
-div.containerDados p{
+div.containerData p{
     display: block;
     width: 100px;
     color: var(--color6);
     font-weight: 700;
 }
-div.containerDados p span{
+div.containerData p span{
     display: block;
     color: var(--color4);
+    width: 100px;
 }
-.resulAmont, .resulTotal{
+.resultAmont, .resultTotal{
     display: block;
     color: var(--color1);
     font-size: 40px;
     font-weight: 700;
     padding-right: 5px;
 }
-#btnResete{
+#btnReset{
     font-size: 24px;
     font-weight: 700;
     border: none;
@@ -191,7 +194,7 @@ div.containerDados p span{
     color: var(--color2);
     padding: 5px;
 }
-#btnResete:hover{
+#btnReset:hover{
     background-color: var(--color5) !important;
     cursor: pointer;
 }
@@ -209,10 +212,10 @@ footer{
         align-items: center;
         width: 500px;
     }
-    div.containerDados{
+    div.containerData{
         gap: 40px;
     }
-    .resulAmont, .resulTotal{
+    .resultAmont, .resultTotal{
         font-size: 35px;
     }
 }
@@ -226,20 +229,20 @@ footer{
         width: 400px;
         padding: 20px;
     }
-    p.selectPorce{
+    p.selectTipPercentage{
         text-align: center;
     }
-    div.escolherPorc{
+    div.selectPercentage{
         display: grid;
         grid-template-columns: 150px 150px;
         grid-template-rows: 50px 50px 50px;
         gap: 15px;
         justify-content: center;
     }
-    .resulAmont, .resulTotal{
+    .resultAmont, .resultTotal{
         font-size: 30px;
     }
-    div.resultado{
+    div.result{
         width: 100%;
         padding: 50px 25px 40px;
     }
@@ -256,13 +259,13 @@ footer{
         width: 90vw;
         padding: 20px;
     }
-    div.containerDados{
+    div.containerData{
         display: flex;
         gap: 0px;
         flex-direction: column;
         align-items: flex-start;
     }
-    div.containerDados p{
+    div.containerData p{
         display: flex;
         width: auto;
         gap: 20px;
@@ -274,76 +277,81 @@ footer{
     input{
         width: 200px;
     }
-    div.inforDados{
+    div.informData{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         font-size: 20px;
     }
-    div.escolherPorc{
+    div.selectPercentage{
         grid-template-columns: 100px 100px;
         grid-template-rows: 40px 40px;
         gap: 10px;
     }
-    div.dados{
+    div.data{
         justify-content: space-between;
         align-items: center;
         font-size: 19px;
     }
-    div.pAviso{
+    div.divWarning{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    div.containerDados p{
+    div.containerData p{
         width: 230px;
         justify-content: center;
         gap: 10px;
     }
-    .resulAmont, .resulTotal{
+    .resultAmont, .resultTotal{
         align-self: center;
     }
 }
 @media(max-width: 320px){
-    div.containerDados p{
+    div.containerData p{
         display: block;
         text-align: center;
+    }
+    div.containerData p span{
+        display: block;
+        text-align: center;
+        margin: auto;
     }
 }
 @media(max-width: 250px){
     input{
         width: 180px;
     }
-    div.inforDados{
+    div.informData{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         font-size: 20px;
     }
-    div.escolherPorc{
+    div.selectPercentage{
         grid-template-columns: 75px 75px;
         grid-template-rows: 40px 40px;
         gap: 10px;
     }
-    div.dados{
+    div.data{
         justify-content: space-between;
         align-items: center;
         font-size: 19px;
     }
-    div.containerDados p{
+    div.containerData p{
         width: 230px;
         gap: 10px;
     }
-    .resulAmont, .resulTotal{
+    .resultAmont, .resultTotal{
         font-size: 25px;
     }
-    p.inforDados{
+    p.informData{
         text-align: center;
     }
-    input#porcentagemCustom::placeholder{
+    input#customPercentage::placeholder{
         font-size: 16.4px;
     }
 }
