@@ -16,7 +16,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    transition: background 0.5s , color .6s;
+    transition: background .3s ease-in, color .4s ease-out;
 }
 body{
     font-family: var(--fontePrincipal), Arial, Helvetica, sans-serif;
