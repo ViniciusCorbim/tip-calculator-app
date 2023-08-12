@@ -1,14 +1,13 @@
-let price = 0;//Variável Relacionada ao preço da Gorjeta
-let numberPeoples = 0;//Variável Relacionada ao número de pessoas
-let percentage = 0;//Variável Relacionada a porcentagem da Gorjeta
+let price = 0;
+let numberPeoples = 0;
+let percentage = 0;
 
-let btn5 = window.document.getElementById('btn5');  //Pega o botão de 5% de gorjeta
-let btn10 = window.document.getElementById('btn10');//Pega o botão de 10% de gorjeta
-let btn15 = window.document.getElementById('btn15');//Pega o botão de 15% de gorjeta
-let btn25 = window.document.getElementById('btn25');//Pega o botão de 25% de gorjeta
-let btn50 = window.document.getElementById('btn50');//Pega o botão de 50% de gorjeta
+let btn5 = window.document.getElementById('btn5');
+let btn10 = window.document.getElementById('btn10');
+let btn15 = window.document.getElementById('btn15');
+let btn25 = window.document.getElementById('btn25');
+let btn50 = window.document.getElementById('btn50');
 
-//Adiciona um evento para cada botão
 btn5.addEventListener('click', button);
 btn10.addEventListener('click', button);
 btn15.addEventListener('click', button);
@@ -115,10 +114,10 @@ function button(){
             let numberPrice = Number(txtPrice.value);
             price = Number(numberPrice);
     
-            //Define um limite máximo de 10000
-            if(price > 100000){
-                txtPrice.value = 100000;
-                price = 100000;
+            //Define um limite máximo de 1000000
+            if(price > 1000000){
+                txtPrice.value = 1000000;
+                price = 1000000;
                 return price;
             }
             //Define um limite mínimo de 0
