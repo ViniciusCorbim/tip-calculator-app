@@ -1,0 +1,126 @@
+@media screen and (min-width: 400px) {
+  main {
+    section.sect1 {
+      section.output {
+        width: 100%;
+
+        div {
+          p span {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 550px) {
+  main {
+    section.sect1 {
+      section.output {
+        div {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+
+          p span {
+            display: block;
+          }
+
+          output {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 910px) {
+  main {
+    max-width: 900px;
+
+    section.sect1 {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+
+      section.input,
+      section.output {
+        width: 50%;
+        height: 375px;
+      }
+
+      section.input {
+        div {
+          margin: 0 0 30px 0;
+
+          label,
+          p {
+            text-align: start;
+            margin: 0 0 5px 0;
+
+            &.error {
+              margin: 0 0 5px 0;
+            }
+          }
+
+          span.error {
+            display: inline;
+            padding-left: 20px;
+          }
+
+          &.selectTip {
+            width: 330px;
+            height: 140px;
+            margin: 0 0 30px 0;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr;
+
+            p {
+              grid-column: 1 / 4;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      section.output {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div {
+          height: 64px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 10px;
+
+          p {
+            span {
+              display: block;
+            }
+          }
+
+          output {
+            max-width: 200px;
+            font-size: 2.5em;
+
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-height: 750px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
